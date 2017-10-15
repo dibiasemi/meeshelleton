@@ -1,4 +1,19 @@
-<h2>I'm so happy you're here!</h2>
+<p> This is the restricted area/secret page - add detail as necessary</p>
+<h3>I'm so happy you're here!</h3>
+<!-- OR -->
+<h3>Profile Page</h3>
+
+<h4><%= @user.name %>'s Resources</h4>
+
+<% if @user.resources.any? %>
+<ul>
+  <% @user.resources.each do |resource|%>
+  <li><%= resource.name %></li>
+  <% end %>
+</ul>
+<% else %>
+  <p>This user hasn't created any resources</p>
+<% end %>
 
 <div class="overlay">
   <p>   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

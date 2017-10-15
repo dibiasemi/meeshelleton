@@ -1,14 +1,17 @@
 class User < ApplicationRecord
 
   #Here's where you would include associations
+  has_many :resources
 
-  validates :email, uniqueness: true
+  validates :email, :username, uniqueness: true
   validates :name, :username, :email, presence: true
-  validates_format_of :email,:with => /\A[^@\s]+@([^@\s]+\.)+[^@\s]+\z/
 
+# custom method
   validate  :validate_password
+
+
   def password
-  # Virtual attribute
+  # Virtual attribute where "encrypted_password" has to match the column name in the Users table in the database
     @password ||= BCrypt::Password.new(encrypted_password)
   end
 

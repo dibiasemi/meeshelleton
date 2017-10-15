@@ -18,16 +18,19 @@
   <title>Browser Tab Title</title>
 </head>
 <body>
-  <div class="greeting">
-    <h1><a id="title" href="/">Welcome</a></h1>
-    <nav id="navbar">
+    <h1><a id="title" href="/">Welcome/Website Title</a></h1>
+    <nav>
         <% if logged_in?  %>
-        <li><a href="/users/<%= current_user.id %>"></a>Hello,<%= current_user.name %>!</a><li>
-        <li><a href="/logout">Logout</a></li>
+        <ul>
+          <li><a href="/users/<%= current_user.id %>"></a>Hello,<%= current_user.name %>!</a><li>
+          <li><a href="/logout">Logout</a></li>
+        </ul>
         <% else %>
-        <li>Hello, Friend!</li>
-        <li><a href="/sessions/new">Login</a></li>
-        <li><a href="/users/new">Register</a></li>
+        <ul>
+          <li>Hello, Friend!</li>
+          <li><a href="/sessions/new">Login</a></li>
+          <li><a href="/users/new">Register</a></li>
+        </ul>
         <% end %>
     </nav>
     <div class="main">

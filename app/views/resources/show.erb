@@ -1,0 +1,12 @@
+<h3>Edit Resource</h3>
+
+<% if @errors %>
+<%= erb :"_errors", locals: {errors: @errors} %>
+<% end %>
+
+<form class="forms" method="POST" action="/resources/<%= @resource.id %>">
+  <input type="hidden" name="_method" value="PUT">
+  <input type="text" name="game[name]" value="<%= @game.name %>">
+  <textarea rows="15" cols="75" name="game[description]"><%= @game.description %></textarea>
+  <input type="submit" value="Submit Edits">
+</form>
