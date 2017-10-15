@@ -1,7 +1,7 @@
-<p> This is the restricted area/secret page - add detail as necessary</p>
-<h3>I'm so happy you're here!</h3>
-<!-- OR -->
 <h3>Profile Page</h3>
+<div class="overlay">
+<p> This is the restricted area/secret page - add detail as necessary</p>
+
 
 <h4><%= @user.name %>'s Resources</h4>
 
@@ -15,7 +15,12 @@
   <p>This user hasn't created any resources</p>
 <% end %>
 
-<div class="overlay">
+  <ul>
+    <li><a href="'/resources/new'">Create a New Resource</a></li>
+    <li><a href="/sessions/new">Edit an Existing Resource</a></li>
+    <li><a href="/users/new">Delete an Existing Resource</a></li>
+  </ul>
+
   <p>   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo

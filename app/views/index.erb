@@ -1,2 +1,15 @@
-
+<div id="home">
+  <% if logged_in?  %>
+  <ul>
+    <li><a href="/users/<%= current_user.id %>">Hello,<%= current_user.name %>!</a><li>
+    <li><a href="/logout">Logout</a></li>
+  </ul>
+  <% else %>
+  <ul>
+    <li>Hello, Friend!</li>
+    <li><a href="/sessions/new">Login</a></li>
+    <li><a href="/users/new">Register</a></li>
+  </ul>
+  <% end %>
+</div>
 
