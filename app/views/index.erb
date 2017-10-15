@@ -1,7 +1,7 @@
-<div id="home">
+<div class="content-links">
   <% if logged_in?  %>
   <ul>
-    <li><a href="/users/<%= current_user.id %>">Hello,<%= current_user.name %>!</a><li>
+    <li><a href="/users/<%= current_user.id %>"><%= current_user.name %>'s Profile Page</a><li>
     <li><a href="/logout">Logout</a></li>
   </ul>
   <% else %>

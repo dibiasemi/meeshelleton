@@ -21,8 +21,9 @@
     <nav>
         <% if logged_in?  %>
         <ul>
-          <li><a href="/users/<%= current_user.id %>"></a>Hello,<%= current_user.name %>!</a><li>
           <li><a href="/logout">Logout</a></li>
+          <li><a href="/resources">View Resources</a></li>
+          <li><a href="/users/<%= current_user.id %>">Hello, <%= current_user.name %>!</a><li>
         </ul>
         <% else %>
         <ul>

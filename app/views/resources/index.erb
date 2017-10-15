@@ -1,11 +1,13 @@
-<h3>Resources</h3>
-
-<ul>
-<% @resources.each do |resource| %>
-  <li><a href="/resources/<%= resource.id %>"><%= resource.name %></a></li>
-</ul>
-
-
-<% if logged_in? %>
-<a href="/resources/new">Create Resource</a>
+<h3>List of Resources</h3>
+<div class="content-links">
+<% if !@resources.empty? %>
+  <ul>
+  <% @resources.each do |resource| %>
+    <li><a href="/resources/<%= resource.id %>"><%= resource.name %></a></li>
+  <% end %>
+  </ul>
+  <% else %>
+  <p>There are currently no resources</p>
 <% end %>
+    <li><a href="/resources/new">Create a New Resource</a><li>
+</div>

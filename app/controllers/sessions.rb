@@ -25,7 +25,7 @@ end
 get '/logout' do
   set_current_userid(nil)
   session.clear
-  redirect '/sessions/new'
+  redirect '/'
 end
 
 # I prefer not to delete the session but to just simply "logout"

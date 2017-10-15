@@ -1,5 +1,5 @@
 get '/resources' do
-  @resource = Resource.all
+  @resources = Resource.all
   erb :"resources/index"
 end
 
@@ -46,7 +46,7 @@ get '/resources/:id/edit' do
 
   @resource = Resource.find_by(id: params[:id])
 
-  authorize!(@resource.user)
+  redirect_if_not_authorized(@resource.user)
   erb :"resources/edit"
 end
 
