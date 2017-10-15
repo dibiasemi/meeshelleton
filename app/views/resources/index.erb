@@ -1,13 +1,14 @@
 <h3>List of Resources</h3>
+
 <div class="content-links">
-<% if !@resources.empty? %>
-  <ul>
-  <% @resources.each do |resource| %>
-    <li><a href="/resources/<%= resource.id %>"><%= resource.name %></a></li>
-  <% end %>
+  <% if !@resources.empty? %>
+    <ul>
+    <% @resources.each do |resource| %>
+      <li><a href="/resources/<%= resource.id %>"><%= resource.name %></a></li>
+    <% end %>
   </ul>
   <% else %>
-  <p>There are currently no resources</p>
-<% end %>
+    <p>There are currently no resources</p>
+  <% end %>
     <li><a href="/resources/new">Create a New Resource</a><li>
 </div>

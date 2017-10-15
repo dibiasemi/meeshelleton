@@ -4,12 +4,10 @@
 <%= erb :"_errors", locals: {errors: @errors} %>
 <% end %>
 
-<!-- Post to /plural - meaning you're making this thing -->
 <form method="POST" action="/resources">
-<!-- resource is like args when making a ruby object - you're creating a nested hash -->
-    <label for="name">Name:</label><br>
-    <input type="text" name="resource[name]" value="<%= @resource.try(:name) %>" placeholder="name"><br>
-    <label for="name">Description:</label><br>
-    <textarea rows="15" cols="75" name="resource[description]" placeholder="Type here..." value="<%= @resource.try(:description) %>"></textarea><br>
-    <input type="submit" value="Create Resource" class="button">
+  <label for="name">Name:</label><br>
+  <input type="text" name="resource[name]" value="<%= @resource.try(:name) %>" placeholder="name"><br>
+  <label for="name">Description:</label><br>
+  <textarea rows="15" cols="75" name="resource[description]" placeholder="Type here..." value="<%= @resource.try(:description) %>"></textarea><br>
+  <input type="submit" value="Create Resource" class="button">
 </form>

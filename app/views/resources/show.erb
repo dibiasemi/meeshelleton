@@ -1,12 +1,14 @@
 <h3><%= @resource.name %></h3>
+
 <div class="overlay">
   <p><%= @resource.description %></p>
 </div>
+
 <div class="content-links">
   <% if authorized?(@resource.user) %>
-  <ul>
-    <li><a href="/resources/<%= @resource.id %>/edit">Edit Resource</a></li>
-  </ul>
+    <ul>
+      <li><a href="/resources/<%= @resource.id %>/edit">Edit Resource</a></li>
+    </ul>
     <form id="delete" method="POST" action="/resources/<%= @resource.id %>">
       <input type="hidden" name="_method" value="DELETE">
       <input type="submit" value="Delete Resource" class="button">

@@ -1,10 +1,6 @@
 helpers do
 
   def current_user
-# This ||= means:
-# The first time you call this, it's going to be nil, go to the right side, go to the database, go get that object and assign it to that variable,
-# The secomnd time you call it, it won't have to go to the database again
-# limit the number of times you go to the datebase
     @current_user ||= User.find_by(id: session[:user_id])
   end
 
