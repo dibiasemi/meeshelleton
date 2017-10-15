@@ -1,0 +1,11 @@
+<h3>Resources</h3>
+
+<ul>
+<% @resources.each do |resource| %>
+  <li><a href="/resources/<%= resource.id %>"><%= resource.name %></a></li>
+</ul>
+
+
+<% if logged_in? %>
+<a href="/resources/new">Create Resource</a>
+<% end %>
