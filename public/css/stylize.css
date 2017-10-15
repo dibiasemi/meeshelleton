@@ -1,0 +1,165 @@
+/*Wood Texture Background Image*/
+body {
+  background-image: url(flowers.jpg);
+  background-attachment:  fixed;
+  background-size: cover;
+  }
+
+/*Creating white transparant overlay behind all body text*/
+div.overlay {
+  background: rgba(255,255,255, 0.65);
+  padding: 5px;
+  margin: 5px;
+  border-radius: 15px;
+}
+
+header {
+  display: block;
+/*  background: rgba(255,255,255, 1.0);*/
+  margin: 0px;
+  padding: 0px;
+}
+
+@font-face {
+  font-family: "Valledofas just personal only"
+  src: url(Valledofas.ttf);
+}
+
+/* All navigation bar related */
+#navbar {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: rgba(255,255,255,0.7);
+  padding: 0px;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+#navbar li {
+  display: block;
+  color: black;
+  text-align: right;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+  font-style: italic;
+}
+
+#navbar li a:hover {
+  color: rgb(242, 202, 60);
+  text-decoration: none;
+  }
+
+/* Website Header and Image*/
+
+/* Headers*/
+#title {
+  display: block;
+  font-family: "Valledofas just personal only";
+  font-size: 100px;
+  text-decoration: none;
+  padding: 5px;
+  margin: 5px;
+}
+
+h2, h3 {
+  display: block;
+  color: white;
+  text-align: left;
+  font-family: "Valledofas just personal only";
+  font-weight: normal;
+  font-size: 60px;
+  padding: 5px;
+  margin: 0px;
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-size: medium;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 15px;
+  font-style: italic;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(242, 202, 60);
+  text-decoration: none;
+}
+
+input[type=text] {
+    width: 27%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    background-color: rgba(242, 202, 60, 0.6);
+    color: white;
+}
+
+input[type=email] {
+    width: 27%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    background-color: rgba(242, 202, 60, 0.6);
+    color: white;
+}
+
+input[type=password] {
+    width: 27%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    background-color: rgba(242, 202, 60, 0.6);
+    color: white;
+}
+
+/* SECTION STYLING */
+.content {
+  background-color: rgba(255,255,255,0.7);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.recco {
+  font-weight: bold;
+}
+
+.tacopic {
+  text-align: center;
+}
+
+.tacopic img:hover {
+opacity: 0.5;
+}
+
+.name {
+  font-family: matador;
+  src: url(http://www.dafont.com/matador.font);
+  font-size: 30px;
+  text-align: center;
+}
+
+.name a:link {
+  color: rgb(95, 210, 220);
+}
+
+.name a:visited {
+  color: orange;
+}
+
+.name a:hover {
+  color: hotpink;
+}

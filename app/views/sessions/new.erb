@@ -1,0 +1,15 @@
+<h3>Login:</h3>
+
+<% if @errors %>
+  <%= @errors %>
+<% end %>
+
+<form id="forms" method='POST' action='/sessions'>
+  <label for="email">Email:</label><br>
+  <input type='email' name='user[email]' placeholder='micky@disney.com'>
+  <br>
+  <label for="password">Password:</label><br>
+  <input type='password' name='user[password]' placeholder='********'>
+  <br>
+  <input type="submit" value="Login">
+</form>

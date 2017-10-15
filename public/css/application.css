@@ -1,0 +1,83 @@
+
+/* BODY */
+
+* {
+  font-family: "YEEZY TSTAR";
+  src: url(yeezy_tstar-heavy-webfont.ttf) format("truetype");
+}
+
+body {
+  background-color: #DBC9BF;
+  display: flex;
+  justify-content: center;
+}
+
+/* NAVIGATION */
+
+nav {
+  background-color: #C29987;
+  padding: 50px 25px 50px 25px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 5px;
+  padding-left: 50px;
+}
+
+nav a {
+  color: #D3BDAF;
+  font-size: 100px;
+  text-decoration: none;
+}
+
+/* DECKS */
+
+.main {
+  background-color: #C29987;
+  margin: 100px auto 100px auto;
+  padding: 300px;
+  border: 50px solid #D3BDAF;
+  text-align: center;
+  width: 25%;
+}
+
+.main li a {
+  color: #D3BDAF;
+  font-size: 100px;
+  text-decoration: none;
+}
+
+
+
+.container {
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.button {
+  background:none!important;
+  border:none;
+  padding:0!important;
+
+  /*optional*/
+  font-family:arial,sans-serif; /*input has OS specific font-family*/
+  color:#069;
+  text-decoration:underline;
+  cursor:pointer;
+}
