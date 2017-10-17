@@ -37,7 +37,7 @@ get '/resources/:id/edit' do
 end
 
 put '/resources/:id' do
-  aredirect_if_not_logged_in
+  redirect_if_not_logged_in
   @resource = Resource.find_by(id: params[:id])
   redirect_if_not_authorized(@resource.user)
 
